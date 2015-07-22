@@ -78,4 +78,4 @@ myFirebaseRef.child("location/city").on("value", function(snapshot) {
 ## sample project
 
 #### [teamsego.github.io/github-trend-kr-starter](http://teamsego.github.io/github-trend-kr-starter/)
-#### [dazzling-heat-8529.firebaseapp.com](dazzling-heat-8529.firebaseapp.com)
+#### [dazzling-heat-8529.firebaseapp.com](https://dazzling-heat-8529.firebaseapp.com/)
