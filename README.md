@@ -16,7 +16,7 @@ AngularJS와 Firebase를 이용해 서비스 구축하기
 ## BaaS (Backend as a Service)
 > backend 프로그램을 Service로 제공
 
-![이미지](http://www.weplr.com/wp-content/uploads/2012/11/baas_features.png)
+![이미지](img/baas_features.png)
 
 ## firebase
 > 채팅 서비스로 시작
@@ -75,6 +75,6 @@ myFirebaseRef.child("location/city").on("value", function(snapshot) {
 });
 ```
 
-## Code Lab
+## sample project
 
-firebase, github gh-pages 를 이용한 채팅 Web-Service
+[dazzling-heat-8529.firebaseapp.com](dazzling-heat-8529.firebaseapp.com)
