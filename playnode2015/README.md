@@ -222,8 +222,14 @@ Filtto - 집단 지성 번역 플랫폼
 # Big Data 세계를 헤엄친 이야기
 ### Speaker - 이병준
 
-http://imjuni.github.io/playnode2015/
+- 발표 자료 : http://slidedeck.io/imjuni/playnode2015
 
+
+- 25억 건 이상의 데이터
+- 6PB 정도의 데이터를 저장
+- 일일 사용량은 11TB
+
+### Data Visualization 도구
 ![이미지](img/galleon.JPG)
 
 ![이미지](img/nodejs.JPG)
@@ -231,3 +237,48 @@ http://imjuni.github.io/playnode2015/
 ### node-thrift 를 이용한 Hive 접근
 
 ![이미지](img/nodejs2.JPG)
+
+
+# 번외 Thrift
+
+### Thrift 란 ?
+##### - The Apache Thrift software framework, for scalable cross-language service development
+
+- 교차언어간에 자연스럽게 통신할수있는  RPC 클라이언트/서버
+- 이너리 형태로 통신할 수 있어,네트워크 트래픽을 줄일 수 있다.
+- C++, Java, Python, PHP, Ruby, Erlang, Perl, Haskell, C#, Cocoa, JavaScript, Node.js, Smalltalk, OCaml and Delphi and 기타등등
+![이미지](img/apache-thrift-4-1024.jpg)
+
+(출처 : http://www.slideshare.net/mrg7211/apache-thrift-51044563)
+
+#### 장점
+- 버전닝 지원
+- 여러 언어에서 사용 가능하며 언어에 맞도록 소스가 생성되고, 언어간의 Serialization 가능
+- Sync, Async Server API 제공
+- XML 설정이 필요 없음
+- Layer에 맞는 Interface를 사용 및 Customizing 구축 가능
+- RPC 기능 제공 (Google Protocol Buffer에는 없는 기능)
+- 서버 기능 좋음
+   - 서블릿 제공(org.apache.thrift.server.TServlet)
+   - 멀티쓰레드 지원 (org.apache.thrift.server.ThreadPoolServer : worker thread 지정)
+   - Async 지원 (org.apache.thrift.server. TNonblockingServer : single threaded)
+   - Multi-thread Half-Sync/Half-Async지원 : org.apache.thrift.server. THsHaServer
+   - Exception을 제공 (Google Protocol Buffer에는 없는 기능)
+   - Set, Map 지원 (Google Protocol Buffer에는 없는 기능)
+
+####단점
+- 자바로 코드가 생성될 때, Slf4j를 기본적으로 가지고 가며, 내부 코드는 모두 thrift lib가 필요함
+- C++의 Server threading part는 Boost에 의존을 가짐
+- 자바 쪽 이클립스 플러그인 없음
+- Thrift lib의 api가 자주 바뀌어서, 버전 업마다 소스를 좀 보고 코딩해야 함. (인터넷 예제가 거의 없음)
+   인터넷 예제랑 달라서, 컴파일 에러 안나게 하는게 귀찮음...
+- XML Serialization/Deserialization 기능 없음
+- 문서가 확실히 적음 (허허~)
+- 생성된 코드가 Google Protocol Buffer에 비해서 보기는 편하지는 않음 (특히 C++)
+
+(출처 : http://brad2014.tistory.com/320)
+
+관련 링크
+- http://advent.perl.kr/2011/2011-12-04.html
+- http://knight76.tistory.com/entry/Apache-Thrift-%EC%A1%B0%EC%82%AC
+- http://knight76.tistory.com/1427
