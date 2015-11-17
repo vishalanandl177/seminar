@@ -1,4 +1,4 @@
-# play.node(2015);
+# Return play.node();
 
 ### 2015 - http://playnode.io/
 ### 2012 - http://nodeconf.kr/2012/
@@ -8,19 +8,23 @@
 ![이미지](img/playnode.jpg)
 
 # welcome
-### Speaker - Outsiter
+### Speaker - Outsider
+
+- 블로그 : http://blog.outsider.ne.kr/
 
 ### - 2012년은 Nodejs를 소개하는 자리!
 ### - 2015년은 실제 Production으로 사용하고 있는 경험, 노하우를 공유해보자!
 
 ### 최근 Node.js의 큰 변화
 
+![이미지](img/nodejs_lts_schedule.PNG)
+
 v0.12.x 에서 순식간에 v4.2.2 LTS 로 그리고 v5.0.0 Stable 까지.
 
 ### Node.js 한국 커뮤니티 http://nodejs.github.io/nodejs-ko/
 
 # Modular vs Monolith
-### Speaker - Tim Oxley
+### Speaker - Tim Oxley@NodeSource
 
 ![이미지](img/plat.jpg)
 #### (통역기 대신 스크린에 한글로 번역해서 적어주는게 인상적이었다.)
@@ -35,30 +39,30 @@ v0.12.x 에서 순식간에 v4.2.2 LTS 로 그리고 v5.0.0 Stable 까지.
 - 지나친 모듈화는 피하자.
 
 # npm:>=3
-### Speaker - Kat Marchan
+### Speaker - Kat Marchán@npm inc
 ![이미지](img/npm.jpg)
 
-npm은 자바스크립트 패키지 매니저!
+![이미지](img/CTkq4-4UwAAw6TM.jpg)
 
-gem, pipi의 라이브러리를 합친 것 보다 많은 20만개!
+- npm은 자바스크립트 패키지 매니저!
+- gem, pipi의 라이브러리를 합친 것 보다 많은 20만개!
 
-npm V3의 변화 내용  
+### npm v3의 변화 내용  
 
-semver - version 호환성 체크 모듈 major release, minor release, fatch
-
-flat trees
-- 기존 2버전에서의 디펜던시 안에 중복 패키지가 있을 경우 중복 설치하던 문제 해결
-- 하위 호환성이 지원되면서 중복되는 것들은 트리 위로 이동
-
-npm shrinkwrap
-- 다른 컴이던 같은 컴에서 2번 실행하던 결과는 항상 같아야한다!
+1. progress bar
+2. semver - version 호환성 체크 모듈 major release, minor release, fatch
+3. flat trees
+  - 기존 2버전에서의 디펜던시 안에 중복 패키지가 있을 경우 중복 설치하던 문제 해결
+  - 하위 호환성이 지원되면서 중복되는 것들은 트리 위로 이동
+4. npm shrinkwrap
+  - 다른 컴이던 같은 컴에서 2번 실행하던 결과는 항상 같아야한다!
 
 프론트 엔드도 서폿 예정
 
 ES6 Modules - 아직 모듈 로더가 표준화가 되어 있지 않아서 지켜보고 결정해야할 이야기
 
 # Pipe: 콜백지옥의 또 다른 거짓 선지자
-### Speaker - 조승연
+### Speaker - 조승연@KnowRe
 
 ### http://kivol.net/playnode.pdf
 
@@ -107,8 +111,13 @@ var [a,b,c] = await* [
 ```
 
 # Gulp로 정적 페이지 생성하기
-### Speaker - 박창우
+### Speaker - 박창우@프리랜서
 ![이미지](img/gulp-vs-grunt.jpg)
+
+### Gulp?
+- The streaming build system.
+- development, production, testing 등의 다른 빌드들로 빌드
+
 
 ### - Gulp 좋다!
 ### - markdown 좋지만, asciidoc 도 좋다.
@@ -119,7 +128,7 @@ var [a,b,c] = await* [
 
 
 # Node.js 기반의 대용량 분산 서버 아키텍처 설계 사례
-### Speaker - 김요한
+### Speaker - 김요한@GS SHOP
 ### http://www.slideshare.net/JohnKim0331/play-node-conference
 
 CPU Intensive Task는 잘 생각해봐야한다.
@@ -152,7 +161,7 @@ CPU Intensive Task는 잘 생각해봐야한다.
 ![이미지](img/play-node-conference-66-1024.jpg)
 
 # 시간당 수백만 요청을 처리하는 node.js 서버 운영기  
-### Speaker - 김군우
+### Speaker - 김군우@Dable
 
 ![이미지](img/dable.JPG)
 
@@ -178,7 +187,7 @@ public/
 - request 모듈을 사용할 때 Linux 기본 timeout(2시간) 이 적용되어!!
 
 # Node.js in Flitto  
-### Speaker - 이승우
+### Speaker - 이승우@Flitto
 ### http://www.slideshare.net/SeungWooLee2/nodejs-in-flitto
 
 Filtto - 집단 지성 번역 플랫폼
@@ -203,7 +212,7 @@ Filtto - 집단 지성 번역 플랫폼
   - 시험적 admin : angular.js, sequelize
 
 # 스프링과 Node.js의 공존  
-### Speaker - 장동수
+### Speaker - 장동수@카카오
 - 발표 자료 : http://www.slideshare.net/iolo/20151112-playnodespringnodejs
 - 소스 코드 : https://github.com/iolo/playnode-springboard-demo
 
@@ -223,7 +232,7 @@ Filtto - 집단 지성 번역 플랫폼
 - 溫故而知新, 可以爲師矣 (온고이지신, 가이위사의)
 
 # Big Data 세계를 헤엄친 이야기
-### Speaker - 이병준
+### Speaker - 이병준@SK planet
 
 - 발표 자료 : http://slidedeck.io/imjuni/playnode2015
 
