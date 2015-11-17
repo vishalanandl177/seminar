@@ -17,7 +17,7 @@
 
 ### 최근 Node.js의 큰 변화
 
-![이미지](img/nodejs_lts_schedule.PNG)
+![이미지](img/nodejs_lts_schedule.png)
 
 v0.12.x 에서 순식간에 v4.2.2 LTS 로 그리고 v5.0.0 Stable 까지.
 
