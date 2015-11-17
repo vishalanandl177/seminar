@@ -87,12 +87,15 @@ getDataA(function(a) {
   });
 });
 ```
-1. async
-2. promise
-3. gulp
-3. Generator
-5. await es7
-6. swint-pipe
+
+![이미지](img/callbackhell.JPG)
+
+#### 1. async
+#### 2. promise
+#### 3. gulp
+#### 4. Generator - co (by TJ)
+#### 5. await es7
+#### 6. swint-pipe
 
 ### await example
 ```javascript
